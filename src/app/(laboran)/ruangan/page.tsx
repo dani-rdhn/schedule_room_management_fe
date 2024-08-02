@@ -1,5 +1,5 @@
 import Ruangan from "@/components/(laboran)/Ruangan";
-import TableRuangan from "@/components/shared/Tables/Ruangan";
+// import TableRuangan from "@/components/shared/Tables/Ruangan";
 // import LaboranLayout from '../layout';
 import RuanganSection from "./table";
 import { useSession } from "next-auth/react";

@@ -16,7 +16,7 @@ import {
 import { ArrowUpDown, MoreHorizontal } from "lucide-react"
 // type Checked = DropdownMenuCheckboxItemProps["checked"]
 import { useState } from 'react';
-import { SheetRuangan } from "./sheet";
+// import { SheetRuangan } from "./sheet";
 // import { DialogRuangan } from "./dialog";
 import Room from "@/types/room";
 

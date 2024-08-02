@@ -53,7 +53,7 @@ const DataTableRowActions = <TData extends Schedule,>({ table, column, row }: Da
   };
 
   const handleConfirmDelete = async () => {
-    const id = row.original.jadwal_id;
+    const id = row.original.id;
     try {
       const res = await fetch(`http://localhost:5000/jadwal/${id}`, {
         method: "DELETE",

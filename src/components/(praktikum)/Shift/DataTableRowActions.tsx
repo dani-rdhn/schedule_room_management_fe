@@ -52,7 +52,7 @@ const DataTableRowActions = <TData extends Shift,>({ table, column, row }: DataT
   };
 
   const handleConfirmDelete = async () => {
-    const id = row.original.shift_id;
+    const id = row.original.id;
     try {
       const res = await fetch(`http://localhost:5000/shifts/${id}`, {
         method: "DELETE",

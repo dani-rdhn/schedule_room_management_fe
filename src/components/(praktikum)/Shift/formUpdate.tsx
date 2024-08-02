@@ -63,7 +63,7 @@ export function DialogFormUpdate({ shiftData, open, onOpenChange }: DialogFormUp
 
   const handleEditShift = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/shifts/${shiftData.shift_id}`, { // Use roomData.id from the prop
+      const res = await fetch(`http://localhost:5000/shifts/${shiftData.id}`, { // Use roomData.id from the prop
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

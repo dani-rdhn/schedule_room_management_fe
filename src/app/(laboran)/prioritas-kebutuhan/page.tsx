@@ -1,5 +1,5 @@
 import Kebutuhan from "@/components/(laboran)/Prioritas-kebutuhan";
-import TableKebutuhan from "@/components/shared/Tables/Kebutuhan";
+// import TableKebutuhan from "@/components/shared/Tables/Kebutuhan";
 import PrioritasSection from "./table";
 // import LaboranLayout from '../layout';
 

@@ -93,7 +93,7 @@ export function DialogFormUpdate({ scheduleData, open, onOpenChange }: DialogFor
   const handleEditJadwal = async () => {
     try {
       console.log("Nilai kebutuhan_id sebelum dikirim:", kebutuhan_id);
-      const res = await fetch(`http://localhost:5000/jadwal/${scheduleData.jadwal_id}`, { // Use roomData.id from the prop
+      const res = await fetch(`http://localhost:5000/jadwal/${scheduleData.id}`, { // Use roomData.id from the prop
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
