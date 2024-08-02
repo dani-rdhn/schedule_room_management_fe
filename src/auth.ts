@@ -3,6 +3,7 @@ import Credentials from "next-auth/providers/credentials";
 import jwt from "jsonwebtoken"; // Import the jwt library
 
 const JWT_SECRET = process.env.JWT_SECRET || "default_jwt_secret"; // Provide a default secret for development
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL; // Fetch base URL from environment variable
 
 if (!process.env.JWT_SECRET) {
   console.warn("Warning: JWT_SECRET is not defined. Using default secret.");
@@ -23,7 +24,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         password: {},
       },
       async authorize(credentials) {
-        const response = await fetch('http://localhost:5000/login', {
+        const response = await fetch(`${API_BASE_URL}/login`, {
           method: 'POST',
           body: JSON.stringify(credentials),
           headers: { 'Content-Type': 'application/json' }
