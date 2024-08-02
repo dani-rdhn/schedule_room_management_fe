@@ -1,0 +1,35 @@
+.rbc-header {
+  background: #3a82f7;
+  color: white;
+  padding: 4px;
+  font-weight: bold;
+  height: 36px;
+}
+
+.rbc-event {
+  padding: 2 !important;
+  font-size: 12px;
+  background: #3a82f7;
+  color: white
+  /* color: white; */
+}
+
+.rbc-event-label {
+  display: none !important;
+}
+
+.rbc-events-container {
+  /* background-color: blueviolet !important; */
+}
+
+/* .rbc-calendar {
+  height: 500px;
+} */
+
+.rbc-calendar {
+  min-height: 600px;
+}
+
+.rbc-time-view-resources .rbc-header {
+  height: 36px;
+}

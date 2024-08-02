@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { SessionProvider, useSession } from "next-auth/react";
+import axios from "axios";
+
+axios.defaults.withCredentials = true;
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <SessionProvider>
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body suppressHydrationWarning={true} className={inter.className}>{children}</body>
     </html>
+    </SessionProvider>
   );
 }
